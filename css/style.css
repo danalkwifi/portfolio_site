@@ -152,9 +152,7 @@ header{
 
 .links-container {
     display: flex;
-
     align-items: center;
-
     list-style: none;
 }
 
@@ -175,7 +173,6 @@ header{
 
 .link {
     padding: 20px;
-
     text-decoration: none;
 }
 
