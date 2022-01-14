@@ -220,6 +220,111 @@ header{
     }
 }
 
+/* My skills section */
+
+.my-skills{
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--skills{
+    color: var(--clr-accent);
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+
+.section__title--skills::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.featurette{
+    font-size: .8rem;
+    line-height: 1.5;
+    color: var(--clr-light);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.my-skilss__items {
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+    padding: 10px;
+
+}
+
+/*@media (min-width: 800px) {
+    .f {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .my-skilss__items + .my-skilss__items {
+        margin-left: 2em;
+    }
+}*/
+
+/* My experience section */
+
+.experience{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    background-size: cover;
+    text-align: center;
+}
+
+.section__title--experience {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--experience::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.25;
+}
+
+
+.card{
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.25);
+    transition: all .2s ease-out;
+}
+.card:hover{
+    border-radius: 0.25rem;
+    transform: scale(1);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+
+
 
 /*  My services section  */
 
@@ -317,8 +422,8 @@ header{
 /* My Work */
 
 .my-work{
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 
 }
