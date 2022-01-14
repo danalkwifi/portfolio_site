@@ -14,8 +14,12 @@
     --fw-bold: 900;
     
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-dark: #707070;
+    --clr-pink1: #FFEFEF;
+    --clr-pink2: #EAC8C7;
+    --clr-green1: #E6E5E0;
+    --clr-green2: #CBD4C7;
+    --clr-green3: #4F6960;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -52,13 +56,14 @@ section {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 strong { font-weight: var(--fw-bold) }
 
 :focus { 
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid var(--clr-pink2);
     outline-offset: 3px;
 }
 
@@ -67,8 +72,8 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    background: var(--clr-pink2);
+    color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -86,7 +91,8 @@ strong { font-weight: var(--fw-bold) }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1;
     margin: 0;
 }
@@ -114,8 +120,9 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--intro,
-.section__subtitle--about {
-    background: var(--clr-accent);
+.section__subtitle--about,
+.section__subtitle--work {
+    background: var(--clr-pink2);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
@@ -162,7 +169,7 @@ header{
 }
 
 .link-item a {
-    color: #2E3038;
+    color: var(--clr-dark);
     font-family: 'Ubuntu', sans-serif;
     font-weight: 200;
 }
@@ -224,12 +231,11 @@ header{
 
 .my-skills{
     background: var(--clr-dark);
-    color: var(--clr-light);
     text-align: center;
 }
 
 .section__title--skills{
-    color: var(--clr-accent);
+    color: var(--clr-pink2);
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -249,7 +255,7 @@ header{
 .featurette{
     font-size: .8rem;
     line-height: 1.5;
-    color: var(--clr-light);
+    color: var(--clr-pink1);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -264,40 +270,27 @@ header{
 
 }
 
-/*@media (min-width: 800px) {
-    .f {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .my-skilss__items + .my-skilss__items {
-        margin-left: 2em;
-    }
-}*/
-
 /* My experience section */
 
 .experience{
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     background-size: cover;
     text-align: center;
 }
 
 .section__title--experience {
-    color: var(--clr-accent);
+    color: var(--clr-pink2);
     position: relative;
 }
 
 .section__title--experience::after {
     content: '';
     display: block;
-    width: 2em;
+    width: 4em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-dark);
+    background: var(--clr-light);
     opacity: 0.25;
 }
 
@@ -307,14 +300,15 @@ header{
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-    background: #fff;
+    background: var(--clr-light);
+    color: var(--clr-dark);
     border: 1px solid rgba(0,0,0,.25);
     transition: all .2s ease-out;
 }
 .card:hover{
     border-radius: 0.25rem;
+    background: var(--clr-pink1);
     transform: scale(1);
-    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 }
 
 .card-body{
@@ -322,8 +316,6 @@ header{
     min-height: 1px;
     padding: 1.25rem;
 }
-
-
 
 
 /*  My services section  */
@@ -430,7 +422,7 @@ header{
 
 /*could be added to the typolography section*/
 .section__subtitle--work{
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
@@ -441,7 +433,7 @@ header{
 }
 /*need fixing*/
 .portfolio__item{
-    background: var(--clr-accent);
+    background: var(--clr-pink1);
     overflow: hidden;
 }
 
@@ -458,7 +450,7 @@ header{
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img{
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .75;
 }
 
@@ -466,7 +458,7 @@ header{
 
 .footer{
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-pink1);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -478,7 +470,7 @@ header{
 }
 
 .foter__link{
-    font-weight: (--fw-bold);
+    font-weight: var(--fw-bold);
 }
 
 .footer__link:hover,
