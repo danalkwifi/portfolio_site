@@ -15,11 +15,9 @@
     
     --clr-light: #fff;
     --clr-dark: #707070;
-    --clr-pink1: #FFEFEF;
-    --clr-pink2: #EAC8C7;
-    --clr-green1: #E6E5E0;
-    --clr-green2: #CBD4C7;
-    --clr-green3: #4F6960;
+    --clr-pink1: #FFCFE6;
+    --clr-pink2: #F9A7CE;
+
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -153,8 +151,7 @@ header{
    
     justify-content: space-between;
     align-items: stretch;
-
-    background-color: var(--header-bg);
+    background-color: var(--clr-pink1);
 }
 
 .links-container {
@@ -253,20 +250,20 @@ header{
 }
 
 .featurette{
-    font-size: .8rem;
+    font-size: 2rem;
     line-height: 1.5;
-    color: var(--clr-pink1);
+    color: var(--clr-light);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .my-skilss__items {
-    flex: 0 0 33.33333333%;
-    max-width: 33.33333333%;
-    padding: 10px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 2px;
 
 }
 
@@ -485,7 +482,7 @@ header{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 1em 0 0;
     padding: 0;
 }
 
