@@ -174,7 +174,7 @@ footer{
     position: relative;
     right: -.5em;
     top: 15%;
-    background-color: #CBD4C7;
+    background-color: #f8bcbf;
     align-self: start;
     grid-column: -1/1;
     grid-row: 2;
@@ -318,11 +318,11 @@ footer{
 }
 
 .text-primary{
-    color: #3A5C50 !important;
+    color: #f8bcbf !important;
     
 }
 .border-primary{
-    border-color: #3A5C50 !important;
+    border-color: #f8bcbf !important;
 }
 
 
@@ -412,6 +412,7 @@ footer{
     font-size: 2rem;
     letter-spacing: -3px;
     font-family: 'Roboto Condensed', sans-serif;
+    color: #f8bcbf !important;
 }
 
 .navbar{
